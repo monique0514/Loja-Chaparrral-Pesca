@@ -7,7 +7,7 @@ $senha = $_POST['senha'];
 
 $sql = "select * from usuarios WHERE email = ?";
 $comando = mysqli_prepare($conexao, $sql);
-
+ 
 mysqli_stmt_bind_param($comando, "s", $email);
 mysqli_stmt_execute($comando);
 
