@@ -62,7 +62,7 @@ $cliente = mysqli_fetch_array($resultado);
     <h1>Chaparral Pesca</h1>
     <h3>Editar Cliente</h3>
 
-    <form action="salvar_edicao_cliente.php" method="post">
+    <form action="atualizar_cliente.php" method="post">
 
         <input type="hidden" name="idcliente"
         value="<?php echo $cliente['idcliente']; ?>">
